@@ -1,6 +1,5 @@
 language: scala
 scala:
-  - 2.11.12
   - 2.12.10
   - 2.13.2
 jdk:
@@ -11,6 +10,8 @@ matrix:
   exclude:
     - scala: 2.11.12
       jdk: openjdk11
+    - scala: 2.11.12
+      jdk: openjdk8
 
 script: |
   sbt ++$TRAVIS_SCALA_VERSION clean coverage test
