@@ -7,6 +7,8 @@ import sbt.Keys.{crossScalaVersions, developers, organizationHomepage, scalacOpt
 /* Define the different sbt projects of sangria
  */
 
+scapegoatVersion in ThisBuild := "1.3.8"
+
 lazy val root = project
   .in(file("."))
   .withId("sangria-root")

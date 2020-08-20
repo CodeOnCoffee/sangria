@@ -17,7 +17,7 @@ script: |
   sbt ++$TRAVIS_SCALA_VERSION clean coverage test
 
 after_success:
-  - sbt ++$TRAVIS_SCALA_VERSION coverageReport
+  - sbt ++$TRAVIS_SCALA_VERSION coverageReport scapegoat
   - sonar-scanner
 
 cache:
